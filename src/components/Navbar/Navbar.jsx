@@ -8,11 +8,18 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Units", path: "/Units" },
+    { name: "Units", path: "/units" },
     { name: "Zones", path: "/zones" },
     { name: "Developers", path: "/developers" },
     { name: "Contact Us", path: "/contact" },
   ];
+
+  const linkClass = ({ isActive }) =>
+    `text-base lg:text-lg font-lato font-bold transition-colors hover:text-[#8E1616] hover:underline hover:underline-offset-8 ${
+      isActive
+        ? "text-[#8E1616] underline underline-offset-8"
+        : "text-[#847D7D]"
+    }`;
 
   return (
     <nav className="h-26.25 bg-[#EBEBEB] px-4 md:px-6 flex justify-between items-center sticky top-0 z-50 shadow-sm">
@@ -25,7 +32,8 @@ export default function Navbar() {
           <NavLink
             key={link.name}
             to={link.path}
-            className="text-base lg:text-lg font-lato font-bold text-[#847D7D] transition-colors hover:text-[#8E1616] hover:underline hover:underline-offset-8"
+            end={link.path === "/"}
+            className={linkClass}
           >
             {link.name}
           </NavLink>
@@ -75,8 +83,9 @@ export default function Navbar() {
           <NavLink
             key={link.name}
             to={link.path}
+            end={link.path === "/"}
             onClick={() => setMenu(false)}
-            className="text-base lg:text-lg font-lato font-bold text-[#847D7D] transition-colors hover:text-[#8E1616] hover:underline hover:underline-offset-8"
+            className={linkClass}
           >
             {link.name}
           </NavLink>

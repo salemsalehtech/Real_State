@@ -2,12 +2,12 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import api from "../utils/api";
 import Map2 from "../../assets/Map2.svg";
+import UnitImgs from "../../components/UnitImgs/UnitImgs";
 
 function UniteDetails() {
   const { id } = useParams();
   const [unit, setUnit] = useState("");
   const [loading, setLoading] = useState(true);
-  const [isActive, setIsActive] = useState(0);
   const getUnitDetail = async () => {
     try {
       const response = await api.get(`/unit/${id}`);
@@ -33,29 +33,7 @@ function UniteDetails() {
   }
   return (
     <div className="mx-10">
-      <section className="flex flex-col gap-3">
-        <div className="w-full object-cover rounded-lg">
-          <img
-            src={unit.images[isActive]}
-            className="w-full h-64 md:h-[525px] object-cover"
-          />
-        </div>
-        <div className="overflow-hidden cursor-pointer grid grid-cols-3 md:grid-cols-5 gap-2">
-          {unit.images.map((img, index) => {
-            return (
-              <div key={img} className="">
-                <img
-                  src={img}
-                  alt="Unit"
-                  onClick={() => setIsActive(index)}
-                  className="w-full h-20 md:h-45 object-cover rounded-lg"
-
-                />
-              </div>
-            );
-          })}
-        </div>
-      </section>
+      <UnitImgs key={unit.id} images={unit.images} title={unit.title_en} />
       <section className="flex flex-col gap-4 md:flex-row md:justify-between my-10 md:my-[69px]">
         <div>
           <p className="font-lato font-bold text-2xl md:text-[40px] text-[#8E1616]">
