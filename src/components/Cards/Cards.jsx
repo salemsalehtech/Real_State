@@ -20,7 +20,7 @@ function Cards({
   return (
     <div className="max-w-110.5 h-auto border border-[#EAEAEA] rounded-2xl shadow-Card hover:shadow-xl">
       <div className="relative">
-        <img src={cardImg} className="rounded-t-2xl w-[442px] h-[284px]" />
+        <img src={cardImg} className="rounded-t-2xl w-full h-56 md:h-[284px] object-cover" />
         {status == "AVAILABLE" ? (
           <span className="absolute top-7 right-2 bg-[#21E008] text-white font-lato font-bold rounded px-5 py-1">
             {status}
@@ -31,7 +31,7 @@ function Cards({
           </p>
         )}
       </div>
-      <div className="flex justify-around items-center border border-[#CEC7C7] py-2.25">
+      <div className="flex flex-wrap gap-2 justify-around items-center border border-[#CEC7C7] py-2.25">
         <div className="flex justify-center items-center gap-1 ">
           <img src={BedroomIcon} />
           <span className="text-[#A18E77]">{bedrooms} Bedrooms</span>
@@ -47,7 +47,7 @@ function Cards({
           <span className="text-[#A18E77]">{size}m</span>
         </div>
       </div>
-      <div className="flex justify-between items-center mx-4 mt-[14px] mb-[21px]">
+      <div className="flex flex-wrap gap-2 justify-between items-center mx-4 mt-[14px] mb-[21px]">
         <p className="font-heading text-[22px] text-[#8E1616] font-semibold">
           {title}{" "}
         </p>
