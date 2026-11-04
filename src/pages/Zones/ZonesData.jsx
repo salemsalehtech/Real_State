@@ -31,7 +31,7 @@ function ZonesData() {
   return (
     <div className="mx-10">
       <div>
-        <img className="w-full h-[525px] object-cover rounded-lg" src={zone.images} />
+        <img className="w-full h-64 md:h-[525px] object-cover rounded-lg" src={zone.images} />
 
         <section className="flex flex-col gap-4 md:flex-row md:justify-between my-10 md:my-[69px]">
           <div>

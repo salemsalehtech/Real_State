@@ -41,7 +41,7 @@ function Zones() {
               <img
                 key={zone.id}
                 src={zone.images}
-                className="cursor-pointer hover:scale-105 transition-transform duration-300 w-[330px] h-[220px]"
+                className="cursor-pointer hover:scale-105 transition-transform duration-300 	w-full object-cover"
                 onClick={() => navigate(`/zones/${zone.id}`)}
               />
             );

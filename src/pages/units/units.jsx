@@ -150,11 +150,11 @@ function Units() {
         </select>
       </section>
       <div className=" flex justify-center items-center">
-        <button className="text-white bg-linear-[#8E1616]-[#C34B4B] w-150 h-10 rounded-xl">
+        <button className="text-white bg-linear-to-r from-[#8E1616] to-[#C34B4B] w-full max-w-150">
           Search
         </button>
       </div>
-      <div className="grid grid-cols-1 gap-5 sm:grid sm:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 m-10 px-20">
+      <div className="grid grid-cols-1 gap-5 sm:grid sm:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 	m-4 md:m-10 lg:px-20">
         {loading ? (
           <h3>Loading...</h3>
         ) : (
