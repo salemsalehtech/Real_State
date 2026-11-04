@@ -9,8 +9,8 @@ import DetailsBtn from "../../../components/Buttons/DetailsBtn";
 function SectionFive() {
   return (
     <section className="mb-36.25">
-      <Title title={"Future Landmarks"} hs={"mt-[180px]"} ds={"mb-[38px]"} />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <Title title={"Future Landmarks"} hs={"mt-16 md:mt-[180px]"} ds={"mb-[38px]"} />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
         <FutureCards imgSrc={Future1} logo={CardLogo1} btn={<DetailsBtn />} />
         <FutureCards
           imgSrc={Future2}
