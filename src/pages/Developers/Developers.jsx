@@ -40,7 +40,7 @@ function Developers() {
         }
         icons={true}
       />
-      <section className="grid grid-cols-1 gap-5 sm:grid sm:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 m-10 px-20">
+      <section className="grid grid-cols-1 gap-5 sm:grid sm:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 	m-4 md:m-10 lg:px-20">
         {developers.map((developer) => {
           return (
             <div key={developer.id}>
