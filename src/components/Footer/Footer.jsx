@@ -6,7 +6,7 @@ import arrow from "../../assets/arrow.svg"
 function Footer() {
   return (
     <footer className="h-auto pb-6 bg-[#EBEBEB]">
-    <div className="mx-auto grid grid-col-1 gap-5 md:grid-cols-2 md:gap-7 lg:grid-cols-4 lg:gap-5 py-10 px-25">
+    <div className="mx-auto grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-7 lg:grid-cols-4 lg:gap-5 py-10 px-4 lg:px-25">
     <div className="flex flex-col justify-between items-center gap-3">
       <img src={Logo} className="h-28.75 w-28.75"/>
       <a href="#" className="text-[#0A142F] text-[16px]">+1 (7635) 547-12-97</a>
