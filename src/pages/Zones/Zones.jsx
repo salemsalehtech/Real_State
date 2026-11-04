@@ -32,7 +32,7 @@ function Zones() {
         }
         icons={true}
       />
-      <section className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 mx-15 my-[87px]">
+      <section className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 mx-4 md:mx-15 my-[87px]">
         {loading ? (
           <h3>Loading...</h3>
         ) : (
@@ -41,7 +41,7 @@ function Zones() {
               <img
                 key={zone.id}
                 src={zone.images}
-                className="cursor-pointer hover:scale-105 transition-transform duration-300 	w-full object-cover"
+                className="cursor-pointer hover:scale-105 transition-transform duration-300 w-full h-[220px] object-cover rounded-2xl"
                 onClick={() => navigate(`/zones/${zone.id}`)}
               />
             );

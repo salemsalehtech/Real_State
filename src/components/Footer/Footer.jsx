@@ -3,6 +3,7 @@ import facebook from "../../assets/facebook.svg"
 import linkedin from "../../assets/Linkedin.svg"
 import twitter from "../../assets/Twitter.svg"
 import arrow from "../../assets/arrow.svg"
+import { Link } from "react-router-dom"
 function Footer() {
   return (
     <footer className="h-auto pb-6 bg-[#EBEBEB]">
@@ -15,21 +16,21 @@ function Footer() {
     <div className="flex flex-col items-center">
       <h1 className="font-bold py-6">Quick Links</h1>
       <div className="flex flex-col items-center gap-2.5">
-      <p className="text-[#0A142F] opacity-65 ">Home </p>
-      <p className="text-[#0A142F] opacity-65 ">Inventories</p>
-      <p className="text-[#0A142F] opacity-65 ">Zones</p>
-      <p className="text-[#0A142F] opacity-65 ">Developers</p>
-      <p className="text-[#0A142F] opacity-65 ">Contact Us</p>
+      <Link to="/" className="text-[#0A142F] opacity-65 hover:opacity-100 hover:text-[#8E1616] transition duration-200">Home</Link>
+      <Link to="/units" className="text-[#0A142F] opacity-65 hover:opacity-100 hover:text-[#8E1616] transition duration-200">Inventories</Link>
+      <Link to="/zones" className="text-[#0A142F] opacity-65 hover:opacity-100 hover:text-[#8E1616] transition duration-200">Zones</Link>
+      <Link to="/developers" className="text-[#0A142F] opacity-65 hover:opacity-100 hover:text-[#8E1616] transition duration-200">Developers</Link>
+      <Link to="/contact" className="text-[#0A142F] opacity-65 hover:opacity-100 hover:text-[#8E1616] transition duration-200">Contact Us</Link>
       </div>
     </div>
     <div className="flex flex-col items-center">
       <h1 className="font-bold py-6">About</h1>
       <div className="flex flex-col items-center gap-2.5">
-      <p className="text-[#0A142F] opacity-65 ">Grand Atlas</p>
+      <Link to="/" className="text-[#0A142F] opacity-65 hover:opacity-100 hover:text-[#8E1616] transition duration-200">Grand Atlas</Link>
       <p className="text-[#0A142F] opacity-65 ">Privacy Policy</p>
       <p className="text-[#0A142F] opacity-65 ">Legal</p>
-      <p className="text-[#0A142F] opacity-65 ">Help</p>
-      <p className="text-[#0A142F] opacity-65 ">Support</p>
+      <Link to="/contact" className="text-[#0A142F] opacity-65 hover:opacity-100 hover:text-[#8E1616] transition duration-200">Help</Link>
+      <Link to="/contact" className="text-[#0A142F] opacity-65 hover:opacity-100 hover:text-[#8E1616] transition duration-200">Support</Link>
       </div>
     </div>
     <div className="flex flex-col items-center gap-8 ">
