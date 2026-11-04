@@ -33,9 +33,9 @@ function ZonesData() {
       <div>
         <img className="w-full h-[525px] object-cover rounded-lg" src={zone.images} />
 
-        <section className="flex justify-between my-[69px]">
+        <section className="flex flex-col gap-4 md:flex-row md:justify-between my-10 md:my-[69px]">
           <div>
-            <p className="font-lato font-bold text-[40px] text-[#8E1616]">
+            <p className="font-lato font-bold text-2xl md:text-[40px] text-[#8E1616]">
               {zone.description_en}
             </p>
             <div className="flex gap-1">
@@ -46,7 +46,7 @@ function ZonesData() {
             </div>
           </div>
           <div>
-            <p className="text-[#A18E77] font-lato font-bold text-[40px] ">
+            <p className="text-[#A18E77] font-lato font-bold text-2xl md:text-[40px] ">
               {zone.city_en}
             </p>
           </div>
