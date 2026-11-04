@@ -29,7 +29,7 @@ const Hero = ({ bg, title, desc, btn, icons }) => {
         )}
       </div>
       {icons && (
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-row gap-4 md:bottom-30 md:left-0 md:translate-x-0 md:px-9 md:flex-col md:gap-6 cursor-pointer">
+        <div className="absolute w-max bottom-6 left-1/2 -translate-x-1/2 flex flex-row gap-4 md:bottom-30 md:left-0 md:translate-x-0 md:px-9 md:flex-col md:gap-6 cursor-pointer">
           <img
             src={fb}
             className="border-white border-[3px] rounded-full size-10 md:size-12 p-2 hover:scale-120 transition duration-200"
