@@ -23,7 +23,7 @@ function UniteDetails() {
   }, [id]);
 
 
-  
+
 
   if (loading) {
     return <h1>Loading...</h1>;
@@ -37,10 +37,10 @@ function UniteDetails() {
         <div className="w-full object-cover rounded-lg">
           <img
             src={unit.images[isActive]}
-            className="w-full h-[562px] object-cover"
+            className="w-full h-64 md:h-[525px] object-cover"
           />
         </div>
-        <div className=" overflow-hidden cursor-pointer flex justify-around items-center">
+        <div className="overflow-hidden cursor-pointer grid grid-cols-3 md:grid-cols-5 gap-2">
           {unit.images.map((img, index) => {
             return (
               <div key={img} className="">
@@ -48,16 +48,17 @@ function UniteDetails() {
                   src={img}
                   alt="Unit"
                   onClick={() => setIsActive(index)}
-                  className='"w-68 h-45 object-cover rounded-lg'
+                  className="w-full h-20 md:h-45 object-cover rounded-lg"
+
                 />
               </div>
             );
           })}
         </div>
       </section>
-      <section className="flex justify-between my-[69px]">
+      <section className="flex flex-col gap-4 md:flex-row md:justify-between my-10 md:my-[69px]">
         <div>
-          <p className="font-lato font-bold text-[40px] text-[#8E1616]">
+          <p className="font-lato font-bold text-2xl md:text-[40px] text-[#8E1616]">
             {unit.title_en}
           </p>
           <div className="flex gap-1">
@@ -68,7 +69,7 @@ function UniteDetails() {
           </div>
         </div>
         <div>
-          <p className="text-[#A18E77] font-lato font-bold text-[40px]">
+          <p className="text-[#A18E77] font-lato font-bold text-2xl md:text-[40px]">
             {unit.price}
           </p>
         </div>
@@ -76,7 +77,7 @@ function UniteDetails() {
       <section>
         <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 mb-[148px]">
           <div>
-            <p className="font-lato font-bold text-[#1D1616] text-[26px] mb-[25px]">
+            <p className="font-lato font-bold text-[#1D1616] text-lg md:text-[26px] mb-[25px]">
               At a glance
             </p>
             <ul className="list-disc list-inside">
@@ -117,12 +118,14 @@ function UniteDetails() {
               services and public transport also makes the villa an ideal choice
               for families.
             </p>
-            <button className="w-[372px] py-[16.5px] bg-[#02aa02]  text-[#EEEEEE] rounded-xl cursor-pointer cursor-pointe font-lato font-bold text-[20px] mr-[22px]">
-              Contact via WhatsApp
-            </button>
-            <button className="w-[372px] py-[16.5px] border border-[#8E1616] text-[#8E1616] rounded-xl cursor-pointe font-lato font-bold text-[20px]">
-              Call
-            </button>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <button className="flex-1 py-[16.5px] bg-[#02aa02] text-[#EEEEEE] rounded-xl cursor-pointer font-lato font-bold text-[20px]">
+                Contact via WhatsApp
+              </button>
+              <button className="flex-1 py-[16.5px] border border-[#8E1616] text-[#8E1616] rounded-xl cursor-pointer font-lato font-bold text-[20px]">
+                Call
+              </button>
+            </div>
           </div>
         </div>
       </section>
