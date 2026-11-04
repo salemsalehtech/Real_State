@@ -11,7 +11,7 @@ function SectionOne() {
         hs={"mt-[123px]"}
         ds={"mb-[56px]"}
       />
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-5.5 mx-auto w-full  ">
+      <div className="grid grid-cols-2 gap-4 px-4 lg:grid-cols-4 lg:gap-5.5 mx-auto w-full  ">
         <div className="flex flex-col justify-center items-center w-full h-35.75 border border-[#CEC7C7] rounded-xl shadow-SectionOne py-2.5 px-3 gap-2">
           <img src={success1} alt="" />
           <h4>48</h4>
