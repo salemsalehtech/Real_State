@@ -92,38 +92,38 @@ function Contact() {
             <h3 className="text-[#847D7D] font-heading font-semibold text-[22px] mb-5">
               Working Hours
             </h3>
-            <div className="flex gap-8.75">
+            <div className="flex gap-4 md:gap-8.75">
               <div>
-                <p className="text-[#8E1616] font-lato font-medium text-[20px] mb-2.75">
+                <p className="text-[#8E1616] font-lato font-medium text-base md:text-[20px] whitespace-nowrap mb-2.75">
                   Saturday :
                 </p>
-                <p className="text-[#8E1616] font-lato font-medium text-[20px] mb-2.75">
+                <p className="text-[#8E1616] font-lato font-medium text-base md:text-[20px] whitespace-nowrap mb-2.75">
                   Sunday :
                 </p>
-                <p className="text-[#8E1616] font-lato font-medium text-[20px] mb-2.75">
+                <p className="text-[#8E1616] font-lato font-medium text-base md:text-[20px] whitespace-nowrap mb-2.75">
                   Monday :
                 </p>
-                <p className="text-[#8E1616] font-lato font-medium text-[20px] mb-2.75">
+                <p className="text-[#8E1616] font-lato font-medium text-base md:text-[20px] whitespace-nowrap mb-2.75">
                   Tuesday :
                 </p>
-                <p className="text-[#8E1616] font-lato font-medium text-[20px]">
+                <p className="text-[#8E1616] font-lato font-medium text-base md:text-[20px] whitespace-nowrap">
                   Wednesday :
                 </p>
               </div>
               <div>
-                <p className="text-[#847D7D] font-lato font-medium text-[20px] mb-2.75">
+                <p className="text-[#847D7D] font-lato font-medium text-base md:text-[20px] whitespace-nowrap mb-2.75">
                   9:00AM - 5:00 PM
                 </p>
-                <p className="text-[#847D7D] font-lato font-medium text-[20px] mb-2.75">
+                <p className="text-[#847D7D] font-lato font-medium text-base md:text-[20px] whitespace-nowrap mb-2.75">
                   9:00AM - 5:00 PM
                 </p>
-                <p className="text-[#847D7D] font-lato font-medium text-[20px] mb-2.75">
+                <p className="text-[#847D7D] font-lato font-medium text-base md:text-[20px] whitespace-nowrap mb-2.75">
                   9:00AM - 5:00 PM
                 </p>
-                <p className="text-[#847D7D] font-lato font-medium text-[20px] mb-2.75">
+                <p className="text-[#847D7D] font-lato font-medium text-base md:text-[20px] whitespace-nowrap mb-2.75">
                   9:00AM - 5:00 PM
                 </p>
-                <p className="text-[#847D7D] font-lato font-medium text-[20px]">
+                <p className="text-[#847D7D] font-lato font-medium text-base md:text-[20px] whitespace-nowrap">
                   9:00AM - 5:00 PM
                 </p>
               </div>

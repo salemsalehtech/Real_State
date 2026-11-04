@@ -149,7 +149,7 @@ function Units() {
           <option value="5000000">5000000</option>
         </select>
       </section>
-      <div className=" flex justify-center items-center">
+      <div className="flex justify-center items-center px-6">
         <button className="text-white bg-linear-to-r from-[#8E1616] to-[#C34B4B] w-full max-w-150">
           Search
         </button>

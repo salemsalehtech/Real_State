@@ -12,22 +12,22 @@ function SectionOne() {
         ds={"mb-[56px]"}
       />
       <div className="grid grid-cols-2 gap-4 px-4 lg:grid-cols-4 lg:gap-5.5 mx-auto w-full  ">
-        <div className="flex flex-col justify-center items-center w-full h-35.75 border border-[#CEC7C7] rounded-xl shadow-SectionOne py-2.5 px-3 gap-2">
+        <div className="flex flex-col justify-center items-center w-full min-h-35.75 text-center border border-[#CEC7C7] rounded-xl shadow-SectionOne py-2.5 px-3 gap-2">
           <img src={success1} alt="" />
           <h4>48</h4>
           <p>Properties Managed</p>
         </div>
-        <div className="flex flex-col justify-center items-center w-full h-35.75 border border-[#CEC7C7] rounded-xl shadow-SectionOne py-2.5 px-3 gap-3">
+        <div className="flex flex-col justify-center items-center w-full min-h-35.75 text-center border border-[#CEC7C7] rounded-xl shadow-SectionOne py-2.5 px-3 gap-3">
           <img src={success2} alt="" />
           <h4>90M</h4>
           <p>Total Managed Investments</p>
         </div>
-        <div className="flex flex-col justify-center items-center w-full h-35.75 border border-[#CEC7C7] rounded-xl shadow-SectionOne py-2.5 px-3 gap-3">
+        <div className="flex flex-col justify-center items-center w-full min-h-35.75 text-center border border-[#CEC7C7] rounded-xl shadow-SectionOne py-2.5 px-3 gap-3">
           <img src={success3} alt="" />
           <h4>500</h4>
           <p>Happy Clients</p>
         </div>
-        <div className="flex flex-col justify-center items-center w-full h-35.75 border border-[#CEC7C7] rounded-xl shadow-SectionOne py-2.5 px-3 gap-3">
+        <div className="flex flex-col justify-center items-center w-full min-h-35.75 text-center border border-[#CEC7C7] rounded-xl shadow-SectionOne py-2.5 px-3 gap-3">
           <img src={success4} alt="" />
           <h4>99%</h4>
           <p>Client Satisfaction</p>

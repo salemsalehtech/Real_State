@@ -75,40 +75,40 @@ function UniteDetails() {
         </div>
       </section>
       <section>
-        <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 mb-[148px]">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 mb-16 lg:mb-[148px]">
           <div>
             <p className="font-lato font-bold text-[#1D1616] text-lg md:text-[26px] mb-[25px]">
               At a glance
             </p>
             <ul className="list-disc list-inside">
-              <li className="font-lato text-[26px] text-[#847D7D] pb-7.5">
+              <li className="font-lato text-lg md:text-[26px] text-[#847D7D] pb-7.5">
                 Plot size ca.: 589 m²
               </li>
-              <li className="font-lato text-[26px] text-[#847D7D] pb-7.5">
+              <li className="font-lato text-lg md:text-[26px] text-[#847D7D] pb-7.5">
                 Living area ca.: 300 m²
               </li>
-              <li className="font-lato text-[26px] text-[#847D7D] pb-7.5">
+              <li className="font-lato text-lg md:text-[26px] text-[#847D7D] pb-7.5">
                 Bedrooms: 3
               </li>
-              <li className="font-lato text-[26px] text-[#847D7D] pb-7.5">
+              <li className="font-lato text-lg md:text-[26px] text-[#847D7D] pb-7.5">
                 Bathrooms: 3
               </li>
-              <li className="font-lato text-[26px] text-[#847D7D] pb-7.5">
+              <li className="font-lato text-lg md:text-[26px] text-[#847D7D] pb-7.5">
                 Living rooms: 2
               </li>
-              <li className="font-lato text-[26px] text-[#847D7D] pb-7.5">
+              <li className="font-lato text-lg md:text-[26px] text-[#847D7D] pb-7.5">
                 WC: 1
               </li>
-              <li className="font-lato text-[26px] text-[#847D7D] ">
+              <li className="font-lato text-lg md:text-[26px] text-[#847D7D] ">
                 External parking: 3, covered
               </li>
             </ul>
           </div>
           <div>
-            <p className="font-lato font-bold text-[#1D1616] text-[26px] mb-[25px]">
+            <p className="font-lato font-bold text-[#1D1616] text-lg md:text-[26px] mb-[25px]">
               Overview
             </p>
-            <p className="font-lato text-[#847D7D] text-[26px] mb-[62px]">
+            <p className="font-lato text-[#847D7D] text-lg md:text-[26px] mb-[62px]">
               Nestled in a residential area of Minusio, this magnificent
               historic villa is for sale, fully renovated and ready to move in.
               The spacious living areas, flooded with natural light thanks to

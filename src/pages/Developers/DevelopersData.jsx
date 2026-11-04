@@ -54,7 +54,7 @@ function DevelopersData() {
           </div>
         </section>
         <section>
-          <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 mb-[148px]">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 mb-16 lg:mb-[148px]">
             <div>
               <p className="font-lato font-bold text-[#1D1616] text-lg md:text-[26px] mb-[25px]">
                 At a glance

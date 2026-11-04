@@ -31,20 +31,20 @@ function Cards({
           </p>
         )}
       </div>
-      <div className="flex flex-wrap gap-2 justify-around items-center border border-[#CEC7C7] py-2.25">
+      <div className="flex flex-wrap gap-1 justify-around items-center border border-[#CEC7C7] py-2.25">
         <div className="flex justify-center items-center gap-1 ">
           <img src={BedroomIcon} />
-          <span className="text-[#A18E77]">{bedrooms} Bedrooms</span>
-          <div className="h-5 w-px bg-[#CEC7C7] ml-3"></div>
+          <span className="text-[#A18E77] text-sm md:text-base whitespace-nowrap">{bedrooms} Bedrooms</span>
+          <div className="h-5 w-px bg-[#CEC7C7] ml-1 md:ml-3"></div>
         </div>
         <div className="flex justify-center items-center gap-1">
           <img src={BathroomIcon} />
-          <span className="text-[#A18E77]">{bathrooms} Bathrooms</span>
-          <div className="h-5 w-px bg-[#CEC7C7] ml-3"></div>
+          <span className="text-[#A18E77] text-sm md:text-base whitespace-nowrap">{bathrooms} Bathrooms</span>
+          <div className="h-5 w-px bg-[#CEC7C7] ml-1 md:ml-3"></div>
         </div>
         <div className="flex justify-center items-center gap-1">
           <img src={SizeIcon} />
-          <span className="text-[#A18E77]">{size}m</span>
+          <span className="text-[#A18E77] text-sm md:text-base whitespace-nowrap">{size}m</span>
         </div>
       </div>
       <div className="flex flex-wrap gap-2 justify-between items-center mx-4 mt-[14px] mb-[21px]">

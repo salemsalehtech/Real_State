@@ -20,6 +20,5 @@ createRoot(document.getElementById("root")).render(
         </Provider>
       </UserProvider>
     </StrictMode>
-    ,
   </BrowserRouter>,
 );
