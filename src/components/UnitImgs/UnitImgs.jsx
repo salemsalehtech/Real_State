@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import SliderArrow from "../Slider/SliderArrow";
 
 const SWIPE_DISTANCE = 50;
 
@@ -30,9 +31,6 @@ function UnitImgs({ images = [], title = "" }) {
     if (distance >= SWIPE_DISTANCE) previous();
   };
 
-  const arrowStyle =
-    "absolute top-1/2 -translate-y-1/2 flex items-center justify-center size-11 rounded-full bg-white/85 text-[#8E1616] shadow-md cursor-pointer hover:bg-white transition duration-200";
-
   return (
     <section className="flex flex-col gap-3" aria-label={`${title} images`}>
       <div
@@ -59,27 +57,19 @@ function UnitImgs({ images = [], title = "" }) {
 
         {count > 1 && (
           <>
-            <button
-              type="button"
+            <SliderArrow
+              direction="previous"
+              label="Previous image"
               onClick={previous}
-              aria-label="Previous image"
-              className={`${arrowStyle} left-3`}
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M15 18l-6-6 6-6" />
-              </svg>
-            </button>
-            <button
-              type="button"
+              className="absolute top-1/2 -translate-y-1/2 left-3"
+            />
+            <SliderArrow
+              direction="next"
+              label="Next image"
               onClick={next}
-              aria-label="Next image"
-              className={`${arrowStyle} right-3`}
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M9 18l6-6-6-6" />
-              </svg>
-            </button>
-            <span className="absolute bottom-3 right-3 rounded-full bg-black/60 px-3 py-0.5 font-lato text-sm text-white">
+              className="absolute top-1/2 -translate-y-1/2 right-3"
+            />
+            <span className="absolute bottom-3 right-3 rounded-full bg-[#8E1616]/90 px-3 py-0.5 font-lato font-bold text-sm text-white">
               {active + 1} / {count}
             </span>
           </>

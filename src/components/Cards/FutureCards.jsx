@@ -6,7 +6,7 @@ function FutureCards({ imgSrc, logo, logoTitle, logoHeader, btn }) {
           <img
             src={imgSrc}
             alt="Palm Hills"
-            className="w-full h-auto md:h-80 object-cover"
+            className="w-full h-auto object-cover"
           />
         </div>
         <div className="mb-4 px-2 flex justify-start gap-2">

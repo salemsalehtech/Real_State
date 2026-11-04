@@ -5,12 +5,13 @@ import CardLogo2 from "../../../assets/CardLogo2.svg";
 import Title from "../../../components/Title/Title";
 import FutureCards from "../../../components/Cards/FutureCards";
 import DetailsBtn from "../../../components/Buttons/DetailsBtn";
+import CardSlider from "../../../components/Slider/CardSlider";
 
 function SectionFive() {
   return (
-    <section className="mb-36.25">
+    <section className="mb-36.25 w-full max-w-7xl mx-auto px-4">
       <Title title={"Future Landmarks"} hs={"mt-16 md:mt-[180px]"} ds={"mb-[38px]"} />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+      <CardSlider label="Future landmarks">
         <FutureCards imgSrc={Future1} logo={CardLogo1} btn={<DetailsBtn />} />
         <FutureCards
           imgSrc={Future2}
@@ -20,21 +21,7 @@ function SectionFive() {
           btn={<DetailsBtn />}
         />
         <FutureCards imgSrc={Future1} logo={CardLogo1} btn={<DetailsBtn />} />
-      </div>
-      <div className="flex w-full justify-center gap-2 py-2 mt-5">
-        <a
-          href="#item1"
-          className="w-2 h-2 bg-gray-400 hover:bg-red-800 rounded-full"
-        ></a>
-        <a
-          href="#item2"
-          className="w-2 h-2 bg-gray-400 hover:bg-red-800 rounded-full"
-        ></a>
-        <a
-          href="#item3"
-          className="w-2 h-2 bg-gray-400 hover:bg-red-800 rounded-full"
-        ></a>
-      </div>
+      </CardSlider>
     </section>
   );
 }
